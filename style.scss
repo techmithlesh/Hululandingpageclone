@@ -1,0 +1,213 @@
+// Variable colors
+$bg-white: #ffffff;
+$bg-black:#000000;
+$bg-dark: #151516;
+$bg-gray: #ebedf2;
+$bg-light-gray: #f7f7f9;
+$font-lightblack: #333333;
+$font-light: #ffffff;
+$font-gray: #cccccc;
+$font-green: #00ed82;
+$font-black: #000000;
+$font-blue: #4682b4;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    line-height: 27.2px;
+    color: $font-light;
+    font-style: normal;
+    box-sizing: border-box;
+    background: $bg-dark;
+}
+header{
+    background: url(/assets/Images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    h4{
+        font-size: 1.4rem;
+    }
+}
+.para{
+    font-size: 8px;
+    color: $font-gray;
+}
+.bundle-btn a{
+    font-size: 0.8rem;
+}
+.banner{
+    background-image: linear-gradient(to right top, #0a1822, #0d212d, #0e2a37, #0e3442, #0e3e4c);
+}
+
+.right h4{
+    color: $font-green;
+}
+.include-plan-para{
+    color: $font-green;
+}
+// show-banner
+
+.show-banner{
+    background: $bg-dark;
+}
+
+// PLANS BANNER START HERE
+
+.flex-1{
+    background: url(/assets/Images/cover-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 33rem;
+    width: 100%;
+}
+.box-2{
+    background: url(/assets/Images/cover-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.box-3{
+    background: url(/assets/Images/cover-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-4{
+    background: url(/assets/Images/cover-4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+// advertisement
+.advertisement{
+    .text-xs{
+        color: $font-green;
+    }
+    .plans-para{
+        font-size: 8px;
+    }
+}
+
+// sports
+.sports{
+    background: url(/assets/Images/live-sports.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.circle{
+    background: url(/assets/Images/network-logo-bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 5rem;
+    height: 5rem;
+}
+
+// footer
+footer{
+    background: $bg-light-gray;
+    hr{
+        border: 1px solid gray;
+        
+    }
+}
+
+// MOBILE RESPONSIVE 
+
+@media only screen and (max-width: 768px){
+    header{
+        h4{
+            font-size: .7rem;
+        }
+        p:first-child{
+            padding-top: 1rem;
+            padding-left: 0%;
+        }
+        h3{
+            display: none;
+        }
+    }
+    #banner-container{
+        flex-wrap: wrap;
+        .flex{
+            flex-direction: column;
+            margin: 1rem;
+            width: 100%;
+            .left{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+            .right{
+                width: 100%;
+                padding: 0%;
+                h4{
+                   text-align: left;
+                   white-space: nowrap;
+
+                }
+                h2{
+                    text-align: center;
+                }
+                a{
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+        .bundle-btn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            a{
+                text-align: center;
+            }
+        }
+       
+    }
+  .show-banner{
+      .flex{
+          padding: 2rem;
+          height: 100%;
+          width: 100%;
+          flex-direction: column;
+      }
+      .flex-1{
+       
+        height: 100%;
+        width: 100%;
+    }
+      .box-1, .box-2, .box-3, .box-4{
+          margin: 0%;
+          margin-top: 1rem;
+          background-size: cover;
+          background-position: center;
+          padding-bottom: 18rem; 
+          
+      }
+   .sports{
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+       text-align: center;
+      display: flex;
+      background-size: contain;
+   }
+}
+#sport-text-container{
+    padding: 1rem;
+    h1{
+        font-size: 2rem;
+    }
+   }
+   .circle{
+    
+    width: 3rem;
+    height: 3rem;
+}
+.footer-container{
+flex-direction: column;
+}
+
+}
